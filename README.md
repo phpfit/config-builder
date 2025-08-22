@@ -60,5 +60,5 @@ return [
 
 ## License
 
-The phpfit/env library is licensed under the MIT license.
+The phpfit/config-builder library is licensed under the MIT license.
 See [License File](LICENSE.md) for more information.
