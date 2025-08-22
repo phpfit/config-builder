@@ -1,0 +1,28 @@
+{
+    "name": "phpfit/config-builder",
+    "version": "1.0.0",
+    "description": "Combine all configs from each phpfit packages and create or extends exists app config",
+    "type": "composer-plugin",
+    "require": {
+        "composer-plugin-api": "^2.6",
+        "phpfit/source-generator": "^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "^2.8"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhpFit\\ConfigBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Iqbal Fauzi",
+            "email": "iqbalfawz@gmail.com"
+        }
+    ],
+    "extra": {
+        "class": "PhpFit\\ConfigBuilder\\ConfigBuilderPlugin"
+    }
+}
