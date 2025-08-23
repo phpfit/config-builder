@@ -54,6 +54,7 @@ class ConfigBuilderPlugin implements PluginInterface, EventSubscriberInterface
         $packages = $installed->packages;
 
         $app_config_dir = $home_path . '/etc/config';
+        $app_cache_dir = $home_path . '/etc/cache';
 
         $nl = PHP_EOL;
         foreach ($packages as $package) {
@@ -87,6 +88,11 @@ class ConfigBuilderPlugin implements PluginInterface, EventSubscriberInterface
 
                 file_put_contents($config_file, $tx);
             }
+        }
+
+        $cache_file = $app_cache_dir . '/phpfit-config.php';
+        if (is_file($cache_file)) {
+            unlink($cache_file);
         }
     }
 }

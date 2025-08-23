@@ -1,6 +1,6 @@
 {
     "name": "phpfit/config-builder",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Combine all configs from each phpfit packages and create or extends exists app config",
     "type": "composer-plugin",
     "require": {
